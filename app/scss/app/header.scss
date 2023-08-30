@@ -1,0 +1,202 @@
+.header{
+    background-color: var(--c3);
+}
+
+.header__content{
+    width: 85%;
+    padding-top: calc(2.5 * var(--offset));
+    padding-bottom: calc(2.5 * var(--offset));
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__left{
+    display: flex;
+    gap: calc(2 * var(--offset));
+}
+
+.header__phone{
+    display: flex;
+    align-items: center;
+    gap: calc(1 * var(--offset));
+}
+
+.header__right{
+    display: flex;
+    gap: calc(2 * var(--offset));
+}
+
+.nav__menu, .header__navbar{
+    display: flex;
+    align-items: center;
+    gap: calc(2 * var(--offset));
+
+    @media screen and (max-width: 1250px) {
+        display: none;
+    }
+}
+
+.header__panel{
+    display: flex;
+    align-items: center;
+    gap: calc(0.5 * var(--offset));
+}
+
+.nav__link{
+    font-size: calc(0.75 * var(--fs));
+    color: var(--c1);
+    transition: 0.2s all ease-in-out;
+    position: relative;
+    &:hover{
+        color: var(--c4);
+    }
+}
+
+.main__logo{
+    width: calc(11.2 * var(--offset));
+    height: calc(2.2 * var(--offset));
+}
+
+.phone{
+    width: calc(1.3 * var(--offset));
+    height: calc(1.3 * var(--offset));
+}
+
+.phone__logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(2.2 * var(--offset));
+    width: calc(2.2 * var(--offset));
+    background-color: var(--c4);
+    border-radius: 50%;
+}
+
+.phone__logo:hover ~ .phone__link{
+    color: var(--c4);
+}
+
+.phone__link{
+    font-size: calc(0.8 * var(--fs));
+    color: var(--c1);
+    transition: 0.2s all ease-in-out;
+    &:hover{
+        color: var(--c4);
+    }
+}
+
+.loopa{
+    width: calc(1.5 * var(--offset));
+    height: calc(1.5 * var(--offset));
+}
+
+.btn{
+    svg{
+        fill: var(--c1);
+        transition: 0.2s all ease-in-out;
+    }
+    background: transparent;
+    border: none;
+    color: var(--c1);
+    font-size: calc(0.75 * var(--fs));
+    transition: 0.2s all ease-in-out;
+    &:hover{
+        color: var(--c4);
+        svg{
+            fill: var(--c4);
+        }
+    }
+}
+
+.burger{
+    position: relative;
+    left: -100%;
+    display: flex; 
+    align-items: center; 
+    width: calc(2 * var(--offset));
+    height: calc(2 * var(--offset));
+    cursor: pointer;
+    background: transparent;
+    border: none;
+    display: none;
+
+    @media screen and (max-width: 1250px) {
+        display: block;
+    }
+}
+
+.burger__line1{
+    position: absolute;
+    top: 0;
+    width: calc(2 * var(--offset));
+    height: calc(0.11 * var(--offset));
+    background-color: var(--c1);
+  }
+
+.burger__line2{
+  position: absolute;
+  width: calc(2 * var(--offset));
+  height: calc(0.11 * var(--offset));
+  background-color: var(--c1);
+}
+
+.burger__line3{
+    top: 23%;
+    position: absolute;
+    width: calc(2 * var(--offset));
+    height: calc(0.11 * var(--offset));
+    background-color: var(--c1);
+  }
+
+// #cursor2{
+//     height: calc(2.5 * var(--offset));
+//     width: calc(8 * var(--offset));
+//     position: relative;
+//     border-left: calc(0.15 * var(--offset)) solid var(--c1);
+//     border-right: calc(0.15 * var(--offset)) solid var(--c1);
+//     background: transparent;
+//     display: none;
+//     position: absolute;
+//     transition: opacity 0.2s, transform 0.2s;
+//     display: flex;
+//     align-items: center;
+//     justify-content: center;
+// }
+
+// .border__top:before {
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     top: 0;
+//     width: 10%;
+//     border-top: calc(0.15 * var(--offset)) solid var(--c1);
+// }
+
+// .border__bottom:before{
+//     content: "";
+//     position: absolute;
+//     left: 0;
+//     bottom: 0;
+//     width: 10%;
+//     border-bottom: calc(0.15 * var(--offset)) solid var(--c1);
+// }
+
+// .border__top--right:before{
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     top: 0;
+//     width: 10%;
+//     border-top: calc(0.15 * var(--offset)) solid var(--c1);
+// }
+
+// .border__bottom--right::before{
+//     content: "";
+//     position: absolute;
+//     right: 0;
+//     bottom: 0;
+//     width: 10%;
+//     border-top: calc(0.15 * var(--offset)) solid var(--c1);
+// }
